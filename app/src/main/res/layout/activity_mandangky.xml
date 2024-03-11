@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Mandangky">
+
+    <TextView
+        android:id="@+id/tv_dangky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký"
+        android:gravity="center"
+        android:textSize="45dp"
+        android:layout_marginTop="150dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        android:gravity="center"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tip_email_dangky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        android:gravity="center"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tip_password_dangky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="10dp"
+            android:password="true"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btn_dangky"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4CAF50"/>
+
+
+</LinearLayout>

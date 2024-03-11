@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context=".DangnhapOTP">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phonenumber:"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        android:gravity="center"
+        >
+        <EditText
+            android:id="@+id/tip_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="phone"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="10dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btn_getPhone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Get Phone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4CAF50"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OTP:"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        android:gravity="center"
+        >
+        <EditText
+            android:id="@+id/tip_OTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="OTP"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="10dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btn_dangnhapOTP"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4CAF50"/>
+
+</LinearLayout>
